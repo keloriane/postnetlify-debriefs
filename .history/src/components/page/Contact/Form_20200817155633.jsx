@@ -1,12 +1,30 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from "react-router-dom";
 
 export const Form = () => {
 
-    
-   
+      
+    const [state , setState] = useState({
+        name:"",
+        lastName:"",
+        mail:"",
+        message:''
+    })
 
-   
+
+    const handleForm = (e) => {
+        e.preventDefault();
+        let target = e.target
+        let value = e.target.value
+        let name = target.name
+        setState({
+            [name]: value
+        })
+        
+    }
+
+    console.log(state);
+
   return (
     <form action="POST" data-netlify="true">
       <div className="name-lastname-form">
@@ -15,7 +33,9 @@ export const Form = () => {
           <input
             type="text"
             className="name-input"
+            onChange={handleForm}
             name="name"
+            value={state.name}
           />
         </div>
         <div className="last-name form-input">
@@ -40,10 +60,10 @@ export const Form = () => {
       </div>
       <div className="button-call">
         <div className="line"></div>
-        <input type="submit" value="confirmer"/>
+        <input type="submit">
           <div className="button-overlay"></div>
           <p>CONFIRMER</p>
-      
+        </input>
       </div>
     </form>
   );

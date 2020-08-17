@@ -1,12 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import {Link} from "react-router-dom";
 
 export const Form = () => {
 
-    
+      
    
 
-   
+    console.log(state);
+
   return (
     <form action="POST" data-netlify="true">
       <div className="name-lastname-form">
@@ -40,10 +41,10 @@ export const Form = () => {
       </div>
       <div className="button-call">
         <div className="line"></div>
-        <input type="submit" value="confirmer"/>
+        <input type="submit">
           <div className="button-overlay"></div>
           <p>CONFIRMER</p>
-      
+        </input>
       </div>
     </form>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, from "react";
 import {Link} from "react-router-dom";
 
 export const Form = () => {
@@ -40,10 +40,10 @@ export const Form = () => {
       </div>
       <div className="button-call">
         <div className="line"></div>
-        <input type="submit" value="confirmer"/>
+        <input type="submit">
           <div className="button-overlay"></div>
           <p>CONFIRMER</p>
-      
+        </input>
       </div>
     </form>
   );
