@@ -1,0 +1,75 @@
+@import "./../../assets/style/module/variables.scss";
+@import "./../../assets/style/module/breakpoints.scss";
+.home-nav {
+    width: 95%;
+    background: $gradient;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    align-items: center;
+    z-index: 100;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            a {
+                font-family: "Proxima";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 175.9%;
+                /* or 32px */
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            button {
+                position: relative;
+                width: 169px;
+                height: 49px;
+                border: 1px solid $white;
+                box-sizing: border-box;
+                background: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                    color: $white;
+                
+            }
+        }
+    }
+}
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    @include media('<=tablet'){
+      display: none;
+    }
+    nav {
+        display: flex;
+        max-width: 720px;
+        width: 100%;
+        justify-content:space-evenly;
+  
+      a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 175.9%;
+        /* or 32px */
+          text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.05em;
+  
+        color: #000000;
+      }
+    }
+
+}

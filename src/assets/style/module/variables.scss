@@ -1,0 +1,25 @@
+$white:#ffffff;
+$lBlue:#8CCAED;
+$dBlue:#041D2C;
+$gradient: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041d2c 0%, #020f18 100%);
+$gradientInner: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041B28 0%, #03141F 100%);
+$proxy: "Proxima";
+$proxyB: "Proxima-bold";
+$proxyL: "Proxima-light";
+
+
+@font-face {
+    font-family: "Proxima";
+    src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype"),
+
+
+}
+
+@font-face {
+    font-family: "Proxima-bold";
+    src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype"),
+}
+@font-face {
+    font-family: "Proxima-light";
+    src: url("./../../fonts/ProximaNova-Light.otf") format("opentype"),
+}

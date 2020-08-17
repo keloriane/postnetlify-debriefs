@@ -1,0 +1,103 @@
+@import "./../../assets//style/module/easing.scss";
+@function rem($pixel) {
+    @return $pixel/16+rem;
+}
+$desktop: 1920px;
+.c-cursor {
+    height: rem(18);
+    position: fixed;
+    left: rem(-9);
+    top: rem(-9);
+    z-index: 300;
+    width: rem(18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+    backface-visibility: hidden;
+    mix-blend-mode: difference;
+    &:before {
+        // border: 1px solid hsla(0, 0%, 83%, 1);
+        background-color: #ffffff;
+        border-radius: 50%;
+        height: 100%;
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        mix-blend-mode: difference;
+        .is-hover & {
+            mix-blend-mode: difference;
+            transform: scale(2.5);
+            transition: all 0.3s $easeOutQuad;
+        }
+    }
+}
+
+button {
+    height: 40px;
+    width: 60px;
+}
+
+#box-css {
+    animation: slidein 20s infinite;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+#inner-cursor {
+    height: 10px;
+    position: fixed;
+    z-index: 300;
+    width: 10px;
+    display: flex;
+    left: -0.25rem;
+    top: -0.25rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #85C3E6;
+    border-radius: 100%;
+    pointer-events: none;
+    &:before {
+        background-color: #85C3E6;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 10;
+        top: 10;
+        .is-hover & {
+            border: 1px solid hsla(274, 100%, 50%, 1);
+            transform: scale(2.5);
+        }
+    }
+}
+
+
+
+
+
+.container {
+    display: flex;
+
+}
+.container h1{
+    font-size: 25px;
+
+}
+
+.container{
+    display: flex;
+    h1{
+        font-size: 25px;
+    }
+}

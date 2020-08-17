@@ -1,0 +1,183 @@
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+
+#techspace {
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  .navigation{
+      display: flex;
+      justify-content: flex-end;
+      width: 95%;
+      @include media('<=tablet'){
+        display: none;
+      }
+      nav {
+          display: flex;
+          max-width: 720px;
+          width: 100%;
+          justify-content:space-evenly;
+    
+        a {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 175.9%;
+          /* or 32px */
+            text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 0.05em;
+    
+          color: #000000;
+        }
+      }
+
+  }
+}
+.techspace {
+  max-width: 1320px;
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  color: $dBlue;
+  height: 100%;
+  @include media("<=tablet"){
+    align-items: inherit;
+  }
+
+  .screen {
+    position: relative;
+    max-width: 778px;
+    width: 100%;
+
+    img {
+      display: block;
+      position: absolute;
+      left: -50px;
+      z-index: 3;
+      top: -50px;
+      @include media('<=tablet'){
+        display: none;
+      }
+    }
+
+    .screen-video {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      video {
+        max-width: 778px;
+        width: 100%;
+      }
+    }
+  }
+
+  .techspace-content {
+    position: relative;
+    .title-back-layer {
+      position: absolute;
+      left: -52%;
+      background-color: $dBlue;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      top: -16%;
+      width: 272px;
+      padding: 10px;
+      overflow: hidden;
+      @include media('<=tablet'){
+        position: absolute;
+        left: -2%;
+        background-color: #041D2C;
+        height: 17px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 110px;
+        padding: 10px;
+        overflow: hidden;
+    
+      }
+
+      h1 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 45px;
+        display: flex;
+        @include media('<=tablet'){
+          font-size: 15px;
+        }
+      }
+    }
+
+    width: 440px;
+    p {
+      color: $dBlue;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 175.9%;
+      /* or 28px */
+
+      letter-spacing: 0.05em;
+      @include media('<=tablet'){
+        font-size: 13px;
+      }
+    }
+  }
+
+  .button-call {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include media("<=tablet") {
+      justify-content: center;
+    }
+
+    .button-overlay {
+      background-color: $dBlue;
+    }
+
+    .line {
+      width: 120px;
+      border: 0.5px solid $dBlue;
+      margin-right: 20px;
+
+      @include media("<=tablet") {
+        display: none;
+      }
+    }
+
+    button {
+      width: 269px;
+      height: 73px;
+      border: 1px solid $dBlue;
+      box-sizing: border-box;
+      background: none;
+      font-family: "Proxima";
+      font-style: normal;
+      font-weight: 1;
+      font-size: 24px;
+
+      @include media("<=tablet") {
+        margin-top: 20px;
+      }
+
+      p {
+        font-family: "Proxima";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+
+        mix-blend-mode: difference;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+@import "./../../assets/style/module/variables.scss";
+@import "./../../assets/style/module/breakpoints.scss";
+
+.menu-box {
+  width: 95%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  display: grid;
+  top: 0;
+  left: 0;
+  grid-template-columns: 20% 30% 50%;
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    "item3 item2 item1"
+    "item4 item4 item1";
+  z-index: 0;
+  display: grid;
+
+  @include media('<=phone') {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33.33%);
+    pointer-events: none;
+  }
+
+  @include media('<=tablet') {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33.33%);
+    pointer-events: none;
+
+  }
+
+  .menu__item {
+    overflow: hidden;
+
+    &.menu__item1 {
+
+      background: $dBlue;
+      grid-area: item1;
+      transform: translateY(-100%);
+
+    }
+
+    &.menu__item2 {
+      background: $dBlue;
+      transform: translateX(-170%);
+      grid-area: item2;
+    }
+
+    &.menu__item3 {
+      background: $white;
+
+      transform: translateX(-100%);
+      grid-area: item3;
+    }
+
+    &.menu__item4 {
+      background: $lBlue;
+      grid-area: item4;
+      transform: translateY(100%);
+
+    }
+
+    &.menu__item5 {
+      background: $white;
+      grid-area: item5;
+
+
+
+    }
+  }
+
+  .menu__item-inner {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100%;
+
+    .menu__bg__logo {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 50%;
+
+      svg {
+        width: 20vw;
+      }
+
+    }
+
+    a {
+      font-size: 2vw;
+      overflow: visible;
+      margin: 0.5rem 0;
+      padding: 0 0.5rem;
+      position: relative;
+      transition: color 0.3s;
+      color: $white;
+      text-transform: uppercase;
+      &:before {
+        counter-increment: menuitem;
+        content: counters(menuitem, "", decimal-leading-zero);
+        position: absolute;
+        font-size: 0.85rem;
+        top: 25%;
+        left: -1.25rem;
+      }
+
+      &:hover {
+        color: $lBlue;
+      }
+
+    }
+  }
+}
+
+.menu__bg__container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 100%;
+  max-width: 450px;
+  width: 100%;
+
+  .menu__bg__line {
+    height: 400px;
+    border: .5px solid $white;
+
+  }
+
+  .menu__bg__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    text-align: center;
+  }
+}
+
+
+
+// .menu-box {
+//     text-align: center;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 200;
+//     display: grid;
+//     grid-template-columns: 100%;
+//     grid-template-rows: repeat(3,33.33%);
+//     pointer-events: none;
+// }

@@ -1,0 +1,95 @@
+@import "./../../../assets//style//module/variables.scss";
+@import "./../../../assets//style//module/breakpoints.scss";
+#services {
+  background: $gradient;
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .logo-bread{
+    margin-left: 40px;
+    @include media('<=tablet'){
+      display: none;
+    }
+  }
+  .logo-layer{
+    margin-left: 50px;
+  }
+  @include media('<=652px'){
+    height: 100%;
+  }
+  @include media('<=phone'){
+    height: 100%;
+    width: 320px;
+    margin: 0 auto;
+    background:none;
+  }
+
+  .service-container {
+    margin: 0 auto;
+  }
+  .title-service {
+    max-width: 409px;
+    height: 88px;
+    h2 {
+      font-family: "Proxima";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 63px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+  .services-grid {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    @include media('<=phone'){
+      height: 100%;
+      width: 320px;
+      margin: 0 auto;
+    }
+  
+    .service-item {
+      width: 310px;
+      height: 165px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      margin-top: 45px;
+      .number {
+        align-self: flex-end;
+      }
+      .headline-service {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 21px;
+          line-height: 26px;
+          color: #ffffff;
+        }
+      }
+      p {
+        font-family: "Proxima";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #fcfcfc;
+      }
+      .underline-service {
+        width: 269px;
+        border: 0.5px solid white;
+      }
+    }
+  }
+}

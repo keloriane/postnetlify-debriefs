@@ -1,0 +1,98 @@
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+#webinaire {
+    width: 100vw;
+    background: $gradient;
+    position: relative;
+    .timeline {
+        height: 100%;
+        width: 1px;
+        margin: auto;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%);
+        background-color: white;
+    }
+    #webinaire-page {
+        width: 891px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+
+        .webinaire-item {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            width: 470px;
+            height: 320px;
+
+
+            &.reverse {
+                align-self: flex-end;
+                flex-flow: row-reverse;
+
+                .timeline-dot {
+                    justify-self: flex-start;
+
+                    .webinaire-image {
+                        img {
+                            right: -14px;
+                        }
+
+                    }
+                }
+            }
+
+            .webinaire-image {
+                img {
+                    max-width: 250px;
+                    width: 100%;
+                    position: absolute;
+                    right: 100px;
+                    top: 77px;
+
+
+                }
+            }
+
+            .webinaire-content {
+                position: relative;
+                z-index: 1;
+
+                h3 {
+                    font-family: "Proxima";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 29px;
+                    line-height: 35px;
+                    color: #FFFFFF;
+                }
+
+                .webinaire-credits {
+                    font-family: "Proxima";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 21px;
+                    color: $lBlue;
+                }
+
+                .webinaire-date {
+                    font-size: 15px;
+                    line-height: 16px;
+                    color: #BFBFBF;
+                }
+            }
+
+            .timeline-dot {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                border-radius: 100%;
+            }
+        }
+    }
+}

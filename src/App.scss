@@ -1,0 +1,107 @@
+
+@import "./assets/style/module/variables.scss";
+@import "./assets/style/module/breakpoints.scss";
+
+.about{
+  margin-top: 200px;
+}
+#root{
+  overflow-x: hidden;
+}
+h2, h3{
+  font-family:$proxyL;
+}
+button{
+  color: $white;
+}
+body,
+html {
+  user-select: none;
+  background: $gradient;
+  overscroll-behavior: none;
+  margin: 0;
+  font-family: "Proxima";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 1560px;
+  min-width: 1560px;
+  margin: 0 auto;
+  height: 100%;
+  @include media("<=1560px") {
+    width: 1280px;
+    min-width: 1280px;
+  }
+  @include media("<=desktop") {
+    width: 1080px;
+    min-width: 1080px;
+  }
+  @include media("<=1080px") {
+    width: 100%;
+    min-width: 100%;
+  }
+  .row {
+    display: flex;
+    height: 95%;
+    padding: 0 32px;
+    @include media("<=phone") {
+      padding: 0 16px;
+    }
+  }
+  .v-center {
+    align-items: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+}
+.intro-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #0D0D0D 0%, #041D2C 100%);
+
+}
+
+#loader{
+  width: 30vw;
+}
+
+path{
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: 95%;
+  height: 100%;
+  .row {
+    display: flex;
+    height: 95%;
+  }
+
+}
+#page{
+  width: 100vw;
+  height: 100vh;
+  
+  overflow: inherit;
+  @include media('<=tablet'){
+    height: 100%;
+    width: 100%;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}

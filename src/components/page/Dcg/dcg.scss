@@ -1,0 +1,73 @@
+@import "./../../../assets/style/module/variables.scss";
+@import "./../../../assets/style/module/breakpoints.scss";
+
+#digital-career-center {
+  width: 95vw;
+  height: 100vh;
+  background-color: $white;
+  .inner-container {
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0 auto;
+    .dcg-image-container {
+      .inner-image {
+        max-width: 589px;
+        width: 100%;
+        height: 366px;
+        position: relative;
+      }
+      .inner-image {
+          .bus{
+            position: absolute;
+            bottom: -61px;
+            right: -20px;
+          }
+      }
+    }
+    .inner-text-content {
+      .title-back-layer {
+        position: absolute;
+        left: 29%;
+        background-color: $dBlue;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        top: 31%;
+        // width: 272px;
+        padding: 10px;
+        overflow: hidden;
+        h2 {
+          text-transform: uppercase;
+          color: $white;
+          font-size: 45px;
+        }
+        @include media("<=tablet") {
+          position: relative;
+          display: block;
+          left: 0;
+          top: 0;
+        }
+      }
+      .text-inner-content {
+        width: 100%;
+        max-width: 616px;
+        margin-top: 50px;
+        p {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 175.9%;
+          /* or 28px */
+
+          text-align: justify;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+}
