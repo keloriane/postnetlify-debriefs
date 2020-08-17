@@ -26,7 +26,7 @@ export const Form = () => {
     console.log(state);
 
   return (
-    <form action="POST" data-netlify="true">
+    <form action="post">
       <div className="name-lastname-form">
         <div className="name form-input">
           <label>Nom</label>
@@ -54,15 +54,12 @@ export const Form = () => {
           <label> Votre projet / vos Questions </label>
           <textarea className="long-text" type="text" />
         </div>
-        <div className="data-filed" data-netlify-recaptcha="true">
-
-        </div>
       </div>
       <div className="button-call">
         <div className="line"></div>
         <button type="submit">
           <div className="button-overlay"></div>
-          <p>CONFIRMER</p>
+          <Link href="/debriefs/home">CONFIRMER</Link>
         </button>
       </div>
     </form>

@@ -62,7 +62,7 @@ export const Form = () => {
         <div className="line"></div>
         <button type="submit">
           <div className="button-overlay"></div>
-          <p>CONFIRMER</p>
+          <Link href="/debriefs/home">CONFIRMER</Link>
         </button>
       </div>
     </form>
