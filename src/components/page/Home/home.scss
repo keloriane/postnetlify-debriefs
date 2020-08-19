@@ -2,6 +2,12 @@
 @import "./../../../assets/style/module/breakpoints.scss";
 
 
+
+.about{
+    width: 100%;
+    max-width: 1380px;
+    margin: 200px auto;
+}
 .not-found{
     width: 100vw;
     height: 100vh;
@@ -128,10 +134,7 @@
             }
 
             .logo-layer {
-                z-index: 1;
-                position: fixed;
-                left: 8%;
-                top: 18%;
+          
             
             }
 

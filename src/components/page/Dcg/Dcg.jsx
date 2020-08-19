@@ -1,18 +1,49 @@
-import React from "react";
+import React,{useEffect} from "react";
 import room from "./../../../assets/images/room.png";
 import bus from "./../../../assets/images/bus.png";
 import "./dcg.scss";
 import { TechspaceNav } from "../../Nav/TechspaceNav";
+import {withRouter} from "react-router-dom"
+import gsap from "gsap";
 
 
-const Dcg = () => {
+
+const Dcg = (props) => {
+
+  const dgc = gsap.timeline({paused: true})
+  useEffect(()=> {
+    dgc
+      .from(".title-back-layer",.3,{width: 0})
+      .from(".text-letter",.3,{x:"-40%", opacity:0})
+      .from(".room-image",.4,{x:"-40%", opacity:0})
+      .from("p",.5 ,{autoAlpha:0});
+
+
+    dgc.play()
+  },[dgc])
+
+  const changePage=(e, destination) => {
+    e.preventDefault();
+    dgc.reverse();
+    const timelineDuration = dgc.duration()*1000;
+    setTimeout(() => {
+        props.history.push(destination);
+        console.log(props)
+      }, timelineDuration);
+}
+
   return (
     <div id="digital-career-center">
-      <TechspaceNav/>
+      <TechspaceNav
+       animation={e => changePage(e ,"/techspace/histoire")}
+       animation1={e => changePage(e ,"/techspace/digital-career")}
+       animation2={e => changePage(e ,"/")}
+       
+       />
       <div className="inner-container">
         <div className="dcg-image-container">
           <div className="inner-image">
-            <img src={room} alt="" />
+            <img className="room-image" src={room} alt="" />
             <img src={bus} alt="" className="bus"/>
           </div>
         </div>
@@ -43,4 +74,4 @@ const Dcg = () => {
     </div>
   );
 };
-export default Dcg;
+export default withRouter(Dcg);

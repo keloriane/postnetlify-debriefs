@@ -22,6 +22,8 @@
         position: relative;
       }
       .inner-image {
+       
+      
           .bus{
             position: absolute;
             bottom: -61px;
@@ -39,7 +41,8 @@
         align-items: center;
         margin-bottom: 20px;
         top: 31%;
-        // width: 272px;
+        width: 100%;
+        max-width: 672px;
         padding: 10px;
         overflow: hidden;
         h2 {

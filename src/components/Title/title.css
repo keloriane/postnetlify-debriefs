@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-bold";
+  src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-light";
+  src: url("./../../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title-container h2 {
+  font-size: 52px;
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .title-container h2 {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+.title-container .underline {
+  width: 100%;
+  max-width: 340px;
+}
+/*# sourceMappingURL=title.css.map */

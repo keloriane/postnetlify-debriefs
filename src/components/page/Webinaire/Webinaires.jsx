@@ -6,6 +6,8 @@ import Nav from "./../../Nav/Nav";
 import gsap from "gsap";
 import {withRouter} from "react-router-dom"
 import axios from "axios";
+import { HomeB } from '../../BreadCrumbs/HomeB';
+
 
 
 const Webinaires = (props) => {
@@ -46,6 +48,7 @@ const Webinaires = (props) => {
 
     return (
         <div id="webinaire">
+            <HomeB />
             <Nav animation={e => changePage(e , "/")} animation0={e => changePage(e , "/services")} animation1={e => changePage(e , "/debriefs/webinaire/")} animation2={e => changePage(e , "/techspace/")} animation3={e => changePage(e , "/blog")}  />
 
             <h2>Webinaires</h2>

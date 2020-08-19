@@ -114,7 +114,7 @@ const Header = ({history}, props) => {
                 </div>
                 <div className="logo-container">
                     <div className="inner-logo">
-                      <Link to="/debriefs/">
+                      <Link to="/">
                         <img src={logo} className="miniature" alt="mini-logo"/>
                       
                       </Link>

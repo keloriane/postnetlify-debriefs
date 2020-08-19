@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./home.scss";
 export const HomeB = (props) => {
   return (
+    <div className="logo-bread-container">
+
     <Link onClick={props.change} to="/" className="logo-bread">
       <svg
         width="84"
@@ -47,5 +50,6 @@ export const HomeB = (props) => {
         />
       </svg>
     </Link>
+    </div>
   );
 };

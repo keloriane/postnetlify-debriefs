@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-bold";
+  src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-light";
+  src: url("./../../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+#footer {
+  height: 50px;
+  border-top: 1px solid rgba(133, 195, 230, 0.31);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041d2c 0%, #020f18 100%);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 5;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer img {
+  width: 60px;
+}
+/*# sourceMappingURL=footer.css.map */

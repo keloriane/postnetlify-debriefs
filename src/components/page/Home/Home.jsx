@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import Nav from './../../Nav/Nav';
 import { HomeB } from '../../BreadCrumbs/HomeB';
 import {teams} from "./../Main/team";
+import {Title} from "./../../Title/Title";
 
 
 const Home = (props) => {
@@ -108,10 +109,7 @@ const Home = (props) => {
             </div>
 
             <section className="about">
-                          <div className="title-content">
-                              <h2>A propos de nous</h2>
-                              <div className="underline"></div>
-                          </div>
+                          <Title title="A propos de nous" />
 
                    { teams.map((team) => (
                           <div className="about-media-content" key={team.id}>

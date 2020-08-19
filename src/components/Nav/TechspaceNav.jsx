@@ -6,9 +6,9 @@ export const TechspaceNav = (props) => {
         <div>
             <div className="navigation">
             <nav>
-                <Link onClick={props.animation}to="/techspace/histoire">Notre Histoire</Link>
-                <Link onClick={props.animation1} to="/techspace/digital-career">digital career center</Link>
-                <Link onClick={props.animation2}>l'Agence</Link>
+                <Link to="/techspace/histoire" onClick={props.animation}>Notre Histoire</Link>
+                <Link to="/techspace/digital-career" onClick={props.animation1} >digital career center</Link>
+                <Link to="/" onClick={props.animation2} >l'Agence</Link>
             </nav>
             </div>
         </div>

@@ -3,6 +3,7 @@ import "./Blog.scss";
 import { Articles } from './Articles';
 import { Title } from '../../Title/Title';
 import { HomeB } from '../../BreadCrumbs/HomeB';
+import Nav from "./../../Nav/Nav";
 import axios from "axios"
 
 const Blog = () => {
@@ -24,6 +25,7 @@ const Blog = () => {
             console.log(articles);
     return (
         <div id="blog">
+            <Nav />
         { load ? 
     <>
     <HomeB />

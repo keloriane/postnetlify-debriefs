@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-bold";
+  src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-light";
+  src: url("./../../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+#blog {
+  width: 100vw;
+  height: 100%;
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041d2c 0%, #020f18 100%);
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog .underline {
+  margin-top: 5px;
+  width: 180px;
+}
+
+#blog .inner-blog {
+  width: 1240px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+#blog .inner-blog .blog-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-y: scroll;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article {
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #0d0d0d 0%, #041d2c 100%);
+  overflow: hidden;
+  border: 0.5px solid #d7d7d7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px 0px;
+  max-width: 450px;
+  width: 100%;
+  height: 620px;
+  margin-bottom: 40px;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .image-article-container {
+  max-height: 255px;
+  overflow: hidden;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .article-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .article-headline .article-title {
+  font-family: "Proxima-light";
+  font-size: 24px;
+  line-height: 154.3%;
+  font-weight: 200;
+  /* or 37px */
+  color: #ffffff;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .article-headline .article-time {
+  font-size: 10px;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .article-content {
+  padding: 24px;
+}
+
+#blog .inner-blog .blog-wrapper .blog-article .article-content p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 154.3%;
+  /* or 25px */
+}
+
+#blog .inner-blog .blog-wrapper .blog-article img {
+  width: 100%;
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
+}
+/*# sourceMappingURL=Blog.css.map */

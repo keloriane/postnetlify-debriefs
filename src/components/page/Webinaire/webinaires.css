@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-bold";
+  src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-light";
+  src: url("./../../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+#webinaire {
+  width: 100vw;
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041d2c 0%, #020f18 100%);
+  position: relative;
+}
+
+#webinaire .timeline {
+  height: 100%;
+  width: 1px;
+  margin: auto;
+  top: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: white;
+}
+
+#webinaire #webinaire-page {
+  width: 891px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+}
+
+#webinaire #webinaire-page .webinaire-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 470px;
+  height: 320px;
+}
+
+#webinaire #webinaire-page .webinaire-item.reverse {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+#webinaire #webinaire-page .webinaire-item.reverse .timeline-dot {
+  justify-self: flex-start;
+}
+
+#webinaire #webinaire-page .webinaire-item.reverse .timeline-dot .webinaire-image img {
+  right: -14px;
+}
+
+#webinaire #webinaire-page .webinaire-item .webinaire-image img {
+  max-width: 250px;
+  width: 100%;
+  position: absolute;
+  right: 100px;
+  top: 77px;
+}
+
+#webinaire #webinaire-page .webinaire-item .webinaire-content {
+  position: relative;
+  z-index: 1;
+}
+
+#webinaire #webinaire-page .webinaire-item .webinaire-content h3 {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+#webinaire #webinaire-page .webinaire-item .webinaire-content .webinaire-credits {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #8CCAED;
+}
+
+#webinaire #webinaire-page .webinaire-item .webinaire-content .webinaire-date {
+  font-size: 15px;
+  line-height: 16px;
+  color: #BFBFBF;
+}
+
+#webinaire #webinaire-page .webinaire-item .timeline-dot {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+/*# sourceMappingURL=webinaires.css.map */

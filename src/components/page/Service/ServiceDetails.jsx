@@ -164,6 +164,7 @@ const ServiceDetails = (props) => {
 
   return (
     <section className="works">
+      
       <Nav
         animation={(e) => changePage(e, "/")}
         animation0={(e) => changePage(e, "/services")}
@@ -172,8 +173,8 @@ const ServiceDetails = (props) => {
         animation3={(e) => changePage(e, "/blog")}
       />
 
-      <HomeB />
 
+      <HomeB />
       <div className="folio">
         <div className="work--container">
           <div className="inner--left--container">

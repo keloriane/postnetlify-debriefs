@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Proxima";
+  src: url("./../../fonts/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-bold";
+  src: url("./../../fonts/ProximaNova-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Proxima-light";
+  src: url("./../../fonts/ProximaNova-Light.otf") format("opentype");
+}
+
+#services {
+  background: radial-gradient(80.27% 180.6% at 9.33% 71.2%, #041d2c 0%, #020f18 100%);
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services .logo-bread {
+  margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+  #services .logo-bread {
+    display: none;
+  }
+}
+
+#services .logo-layer {
+  margin-left: 50px;
+}
+
+@media (max-width: 652px) {
+  #services {
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  #services {
+    height: 100%;
+    width: 320px;
+    margin: 0 auto;
+    background: none;
+  }
+}
+
+#services .service-container {
+  margin: 0 auto;
+}
+
+#services .title-service {
+  max-width: 409px;
+  height: 88px;
+}
+
+#services .title-service h2 {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 63px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#services .services-grid {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 425px) {
+  #services .services-grid {
+    height: 100%;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+#services .services-grid .service-item {
+  width: 310px;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 45px;
+}
+
+#services .services-grid .service-item .number {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#services .services-grid .service-item .headline-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#services .services-grid .service-item .headline-service h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+#services .services-grid .service-item p {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fcfcfc;
+}
+
+#services .services-grid .service-item .underline-service {
+  width: 269px;
+  border: 0.5px solid white;
+}
+/*# sourceMappingURL=services.css.map */
