@@ -16,14 +16,6 @@ const Webinaires = (props) => {
     let webinaireTl = gsap.timeline({paused: true});
     useEffect(()=> {
 
-        axios.get('https://www.eventbriteapi.com/v3/?token=A46DMBWAJN2Z2IVQ3K/list')
-        .then((res)=> {
-            console.log(res);
-        })
-        .catch((err)=>{
-            console.warn(err)
-        })
-
 
 
         webinaireTl

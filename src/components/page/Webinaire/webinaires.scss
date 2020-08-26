@@ -1,9 +1,16 @@
 @import "./../../../assets/style/module/variables.scss";
 @import "./../../../assets/style/module/breakpoints.scss";
+
 #webinaire {
     width: 100vw;
     background: $gradient;
     position: relative;
+    .logo-bread-container{
+        @include media('<=900px'){
+            display: none;
+        }
+    }
+
     .timeline {
         height: 100%;
         width: 1px;
@@ -11,15 +18,27 @@
         top: 0;
         position: absolute;
         left: 50%;
-        transform: translate( -50%);
+        transform: translate(-50%);
         background-color: white;
+
+        @include media('<=900px') {
+            display: none;
+        }
     }
+
     #webinaire-page {
         width: 891px;
         margin: 0 auto;
         display: flex;
         flex-flow: column;
         position: relative;
+
+        @include media('<=900px') {
+            display: block;
+            width: auto;
+        }
+
+
 
         .webinaire-item {
             display: flex;
@@ -30,9 +49,18 @@
             height: 320px;
 
 
+            @include media('<=900px') {
+                margin: 0 auto;
+
+            }
+
             &.reverse {
                 align-self: flex-end;
                 flex-flow: row-reverse;
+
+                @include media('<=tablet') {
+                    flex-flow: row;
+                }
 
                 .timeline-dot {
                     justify-self: flex-start;
@@ -92,6 +120,11 @@
                 height: 50px;
                 background-color: #fff;
                 border-radius: 100%;
+                display: block;
+
+                @include media('<=900px') {
+                    display: none;
+                }
             }
         }
     }
