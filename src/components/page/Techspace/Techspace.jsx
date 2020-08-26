@@ -21,15 +21,17 @@ const Techspace = (props) => {
             .join("");
         }
         const words = [...document.querySelectorAll(".text-letter")];
+        // eslint-disable-next-line
         words.map(word => {
             word.innerHTML = splitWord(word.textContent);
             const newLetter = [...word.querySelectorAll(".chars")]; 
+            // eslint-disable-next-line
             newLetter.map(letter => {
                 titleArray.push(letter);
             });
         }); 
         let chars = document.querySelectorAll('.chars')
-        console.log(chars)
+      
         techspaceTl
         // .staggerFrom(titleBackground,.5,{x:"-150%", ease:"sin.out"},0.5)
         .from("#techspace",.2,{autoAlpha:0})
@@ -47,7 +49,7 @@ const Techspace = (props) => {
     techspaceTl.reverse();
     const timelineDuration = techspaceTl.duration()*1000;
     setTimeout(() => {
-      console.log(props)
+      
         props.history.push(destination);
       }, timelineDuration);
   }

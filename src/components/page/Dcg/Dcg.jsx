@@ -28,7 +28,7 @@ const Dcg = (props) => {
     const timelineDuration = dgc.duration() * 1000;
     setTimeout(() => {
       props.history.push(destination);
-      console.log(props)
+     
     }, timelineDuration);
   }
 

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import gsap from "gsap"
 import "./contact.scss";
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Title } from '../../Title/Title';
 import { HomeB } from '../../BreadCrumbs/HomeB';
 import Nav from './../../Nav/Nav';
@@ -40,7 +40,7 @@ const Contact = (props) => {
         const timelineDuration = contactTl.duration()*1000;
         setTimeout(() => {
             props.history.push(destination);
-            console.log(props)
+            
           }, timelineDuration);
     }
 

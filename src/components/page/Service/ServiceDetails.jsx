@@ -3,7 +3,7 @@ import {
   useParams,
   useRouteMatch,
   useHistory,
-  useLocation,
+ 
   withRouter,
 } from "react-router-dom";
 import gsap from "gsap";
@@ -95,13 +95,12 @@ const ServiceDetails = (props) => {
   let { url } = useRouteMatch();
   let history = useHistory();
 
-  console.log(url);
-  let location = useLocation();
-  console.log(location);
-  console.log("fonctionne putain");
+  
+
+
 
   const service = services[serviceId];
-  console.log(service);
+
 
   const handleNext = () => {
     switch (url) {
@@ -128,7 +127,7 @@ const ServiceDetails = (props) => {
     }
   };
   const handlePrevious = () => {
-    console.log("click");
+    
     switch (url) {
       case `/services/${services[0].id}`:
         history.push(`/services/5`);
@@ -158,7 +157,7 @@ const ServiceDetails = (props) => {
     const timelineDuration = workTimeline.duration() * 1000;
     setTimeout(() => {
       props.history.push(destination);
-      console.log(props);
+      
     }, timelineDuration);
   };
 

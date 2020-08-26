@@ -14,7 +14,7 @@ const Blog = () => {
             axios.get('https://d-briefs.com/wp-json/wp/v2/posts')
                 .then((res)=> {
                     setArticles(res.data)
-                    console.log(res.data);
+                   
                     setload(true)
                 })
                 .catch((err)=>{
@@ -22,7 +22,7 @@ const Blog = () => {
                 })
                 
             }, [])
-            console.log(articles);
+            
     return (
         <div id="blog">
             <Nav />

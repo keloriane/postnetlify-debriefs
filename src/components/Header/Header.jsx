@@ -95,7 +95,7 @@ const Header = ({history}, props) => {
   // }
   useEffect(()=>{
 
-    console.log(props.location);
+   
 
   })
 

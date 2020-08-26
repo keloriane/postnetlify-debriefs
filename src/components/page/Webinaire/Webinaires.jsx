@@ -5,7 +5,7 @@ import webinaireImg from './../../../assets/images/webinaires.png'
 import Nav from "./../../Nav/Nav";
 import gsap from "gsap";
 import {withRouter} from "react-router-dom"
-import axios from "axios";
+
 import { HomeB } from '../../BreadCrumbs/HomeB';
 
 
